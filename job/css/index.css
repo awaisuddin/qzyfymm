@@ -1,0 +1,482 @@
+
+body {
+margin: 0;
+overflow-y: hidden;
+  background-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 40%;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+.columnicon {
+  float: left;
+  width: 10%;
+  text-align: center;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+  float: left;
+  width: 60%;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+.column3 {
+  float: left;
+  width: 100%;
+  height: 100%; /* Should be removed. Only for demonstration */
+  display:none;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+.rowicon:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.item2 {
+  border-radius: 10px;
+  background: #009ac5;
+  padding: 20px;
+  width: 100%;
+  height: 150px;
+}
+
+.item1 {
+  
+  border-radius: 30px;
+  height: 100px;
+  width: 100%;
+  float: right;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myArea myArea ';
+  grid-gap: 5%;
+  background-color: #63d0ff;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #63d0ff;
+    text-align: center;
+    padding: 26px 20px;
+    font-size: 18px;
+    height: 72%;
+    margin-top: 32px;
+}
+
+h2,p {
+  text-align: center;
+}
+
+.nextbtn {
+  float: right;
+  border-radius: 43px;
+    background: white;
+    padding: 8px;
+        width: 50%;
+    height: 100%;
+    margin-left: 42%;
+    margin-top: 5%;
+	text-align: center;
+}
+
+.timer {
+position: absolute;
+    width: 87px;
+    height: 49px;
+    margin-left: 51.4%;
+    margin-top: -11px;
+    float: right;
+    background-color: white;
+	text-align: center;
+}
+
+.timer_margin {
+  margin: 5px 0px 0px 1%;
+}
+
+.red {
+  color: red;
+}
+
+.white {
+  background-color:#63d0ff;
+}
+
+.block {
+  background-color: black;
+  left: -50;
+  height: 150px;
+  width: 100%;
+  transform: rotate(-40deg);
+}
+
+.coinslogo {
+  width: 100px;
+}
+
+.profilelogo {
+  width: 45%;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.players {
+  width: 50%;
+}
+
+.inner_col {
+    float: left;
+    width: 100%;
+    margin-top: 0em;
+    padding: 7px;
+    height: 47em;
+}
+
+.inner_colbg {
+  float: left;
+  width: 0%;
+  padding: 0px;
+  height: 100%; /* Should be removed. Only for demonstration */
+  
+}
+
+
+.bg {
+    height: 131px;
+    width: 113px;
+    border-left: 113px solid white;
+    border-right: 0px solid white;
+    border-bottom: 802px solid transparent;
+    transform: rotate(180deg);
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -111px;
+}
+
+
+
+
+
+
+
+
+
+         table.empty {
+			text-align: left;
+            width: 100%;
+            border-collapse:separate;
+            empty-cells:hide;
+			
+         }
+         td.empty {
+            padding:5px;
+			background-color: #F2F2F2;
+			float: left;
+         }
+
+
+
+
+
+
+
+
+
+.gameid{
+  margin-top:30%;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+
+h1 {
+  float: left;
+    width: 36%;
+	font-size: 40px;
+    text-align: center;
+    background-color: #009ac5;
+  
+}
+
+.gameidbox {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 0 31%;
+}
+
+.share {
+    width: 80%;
+    margin: 13% 7% 41% 6%;
+    float: left;
+}
+
+.sharename {
+  margin-top:10%;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+    width: 100px;
+    float: right;
+    margin-top: -35px;
+    z-index: -50;
+}
+
+.profilelogo {
+  width: 100px;
+}
+
+.toppad {
+    margin-top: -75px;
+}
+
+.button {
+background-color: #f8f9fa;
+    border: none;
+    width: 80%;
+    color: black;
+    font-weight: 900;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: left;
+}
+
+.buttonsalign {
+    margin-top: 50%;
+}
+
+
+.button:hover {
+  background-color: #cbd3da;
+}
+
+
+@media only screen and (max-width: 770px) {
+
+.buttonsalign {
+    margin-top: 10%;
+}
+
+.button {
+background-color: #f8f9fa;
+    border: none;
+    width: 100%;
+    color: black;
+    font-weight: 900;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: left;
+}
+
+
+
+
+  .bg {
+      display: none;
+}
+.column1 {
+    width: 100%;
+    height: 23em;
+    background-color: #63d0ff;
+}
+
+.column2 {
+  width: 100%;
+}
+
+.coinslogo {
+  width: 50px;
+  float: left;
+      margin-top: -29px;
+}
+
+.profilelogo {
+  width: 50px;
+  
+}
+
+table.empty {
+    text-align: left;
+    width: 50%;
+	margin-left: 5%;
+    float: left;
+    margin-top: -64px;
+    font-size: 12px;
+}
+
+.bold {
+  float: left;
+    margin: 27px 0 0 -60px;
+}
+
+.columnicon {
+    float: left;
+    width: 41px;
+    padding: 10px;
+}
+
+
+.columnicon {
+    display: none;
+}
+
+.timer {
+    position: absolute;
+    width: 87px;
+    height: 49px;
+    margin-left: 69.4%;
+    margin-top: 9px;
+    float: right;
+    background-color: #63d0ff;
+    text-align: center;
+}
+
+td.empty {
+    padding: 5px;
+    background-color: #F2F2F2;
+    float: left;
+    width: 153%;
+}
+
+
+
+
+
+
+.gameid {
+    margin-top: 0;
+    text-align: center;
+}
+
+.bold {
+    float: left;
+	margin: 0 0 0 0;
+}
+
+h1 {
+    float: left;
+    width: 100%;
+    font-size: 41px;
+    text-align: center;
+    background-color: #009ac5;
+	margin-top: 1px;
+}
+
+
+.gameidbox {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.share {
+    width: 250px;
+    margin: 0 0 0 17%;
+    float: left;
+}
+
+.sharename {
+    margin-top: -19px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+.column2 {
+display: none;
+}
+
+.column3 {
+display: block;
+background-color: white;
+}
+
+.mainlogo2 {
+    width: 100%;
+    float: left;
+    padding: 7%;
+    margin: -9em 0 0 0;
+}
+
+body {
+	 overflow-y: visible;
+}
+
+.inner_col {
+    height: 23em;
+}
+
+}
+
+.mainlogo {
+      height: 86%;
+    float: right;
+	max-height: 600px;
+    margin: 42px 0 0 -6px;
+    position: absolute;
+    padding: 4%;
+}
+
+a {
+Text-decoration: none;
+color: black;
+}
